@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Fiqih Interaktif - Haji & Umrah</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --hijau-islami: #198754;
+            --soft-bg: #f5f7fa;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--soft-bg);
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar Custom */
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* Card Custom */
+        .card-materi {
+            border: none;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            height: 100%;
+        }
+
+        .card-materi:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(25, 135, 84, 0.2);
+        }
+
+        .card-materi img {
+            border-radius: 20px 20px 0 0;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .text-hijau { color: var(--hijau-islami); }
+
+        /* Quiz Styling */
+        #quiz-card {
+            background: white;
+            border-radius: 25px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #ffffff;
+            border-top: 5px solid var(--hijau-islami);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><i class="fas fa-kaaba me-2"></i> MEDIA FIQIH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#materi">Materi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kuis">Kuis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Belajar Fiqih dengan Menyenangkan</h1>
+            <p class="lead fs-3 mb-5">Topik: Haji dan Umrah – Kelas VII MTs</p>
+            <a href="#materi" class="btn btn-warning btn-lg px-5 py-3 rounded-pill fw-bold shadow">Mulai Belajar</a>
+        </div>
+    </header>
+
+    <section id="materi" class="container py-5">
+        <h2 class="text-center fw-bold text-hijau mb-5">Materi Pembelajaran</h2>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card card-materi">
+                    <img src="https://images.unsplash.com/photo-1564769662533-4f00a87b4056?auto=format&fit=crop&w=500&q=60" alt="Syarat Haji">
+                    <div class="card-body">
+                        <h5 class="fw-bold text-hijau">Syarat Wajib Haji</h5>
+                        <p class="small text-muted">Islam, Baligh, Berakal, Merdeka, dan Istitha'ah (Mampu secara fisik & biaya).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-materi">
+                    <img src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?auto=format&fit=crop&w=500&q=60" alt="Rukun Haji">
+                    <div class="card-body">
+                        <h5 class="fw-bold text-hijau">Rukun Haji</h5>
+                        <p class="small text-muted">Ihram, Wukuf, Tawaf Ifadhah, Sa'i, Tahallul, dan Tertib.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-materi">
+                    <img src="https://images.unsplash.com/photo-1519817650390-64a934479f67?auto=format&fit=crop&w=500&q=60" alt="Syarat Umrah">
+                    <div class="card-body">
+                        <h5 class="fw-bold text-hijau">Syarat Wajib Umrah</h5>
+                        <p class="small text-muted">Sama seperti haji, fokus pada kemampuan dan kesucian diri untuk beribadah.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card card-materi">
+                    <img src="https://images.unsplash.com/photo-1527712330491-098587123049?auto=format&fit=crop&w=500&q=60" alt="Rukun Umrah">
+                    <div class="card-body">
+                        <h5 class="fw-bold text-hijau">Rukun Umrah</h5>
+                        <p class="small text-muted">Ihram, Tawaf, Sa'i, Tahallul, dan Tertib (Tanpa Wukuf di Arafah).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kuis" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div id="quiz-card">
+                        <h3 class="text-center fw-bold text-hijau mb-4">Uji Pemahaman</h3>
+                        <div id="quiz-content">
+                            <h5 id="question" class="mb-4">Memuat pertanyaan...</h5>
+                            <div id="options" class="d-grid gap-2"></div>
+                            <button id="next-btn" class="btn btn-success mt-4 w-100 d-none">Pertanyaan Berikutnya</button>
+                        </div>
+                        <div id="result" class="text-center d-none">
+                            <h2 class="fw-bold">Skor Anda: <span id="score-val" class="text-success">0</span></h2>
+                            <button class="btn btn-outline-success mt-3" onclick="location.reload()">Ulangi Kuis</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="container py-5 text-center">
+        <h2 class="fw-bold text-hijau mb-3">Tentang Penyusun</h2>
+        <p class="text-muted mb-4">Media ini dibuat untuk memudahkan siswa memahami rukun dan syarat ibadah Haji & Umrah.</p>
+        <div class="p-3 shadow-sm d-inline-block rounded-pill px-4 bg-white border">
+            <p class="mb-0 fw-bold">Nama Penyusun: <span class="text-hijau">Amin Nuha</span></p>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center">
+        <p class="mb-0 text-muted">© 2025 Media Fiqih Interaktif | Belajar dengan Hati 💫</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const questions = [
+            { q: "Manakah rukun haji yang tidak ada dalam umrah?", a: ["Tawaf", "Wukuf", "Sa'i", "Tahallul"], c: 1 },
+            { q: "Syarat wajib haji bagi yang mampu disebut...", a: ["Baligh", "Islam", "Istitha'ah", "Merdeka"], c: 2 },
+            { q: "Tahallul dalam rukun haji ditandai dengan...", a: ["Lari kecil", "Mencukur rambut", "Mencium Hajar Aswad", "Niat"], c: 1 }
+        ];
+
+        let idx = 0, score = 0, selected = null;
+
+        function loadQ() {
+            const q = questions[idx];
+            document.getElementById('question').innerText = q.q;
+            const opt = document.getElementById('options');
+            opt.innerHTML = '';
+            document.getElementById('next-btn').classList.add('d-none');
+            
+            q.a.forEach((text, i) => {
+                const btn = document.createElement('button');
+                btn.className = "btn btn-outline-success p-3 text-start";
+                btn.innerText = text;
+                btn.onclick = () => {
+                    selected = i;
+                    document.getElementById('next-btn').classList.remove('d-none');
+                    Array.from(opt.children).forEach(b => b.classList.replace('btn-success', 'btn-outline-success'));
+                    btn.classList.replace('btn-outline-success', 'btn-success');
+                };
+                opt.appendChild(btn);
+            });
+        }
+
+        document.getElementById('next-btn').onclick = () => {
+            if(selected === questions[idx].c) score += Math.round(100/questions.length);
+            idx++;
+            if(idx < questions.length) loadQ();
+            else {
+                document.getElementById('quiz-content').classList.add('d-none');
+                document.getElementById('result').classList.remove('d-none');
+                document.getElementById('score-val').innerText = score;
+            }
+        };
+
+        loadQ();
+    </script>
+</body>
+</html>
